@@ -1,0 +1,89 @@
+1. exploratory analysis
+	- histogram
+	- scatter plot
+	- plot with response variable
+
+2. PCA
+	- 2D
+	- 3D
+
+3. FDA
+	- 2D
+	- 3D
+
+4. Models
+
+4.1 Supervised learning
+- try a bunch of models first with default parameters and for those that have reasonable prediction accuracy, use grid search and parameter tuning methods to yield better prediction
+- models tried
+	- logistic regression
+	- tree methods
+		- decision tree
+		- random forest
+		- extreme randomlized trees
+	- gradient boosting
+	- svm
+	- naive bayes
+	- adaptive boosting
+	- stochastic gradient descent (X)
+	- neural network
+
+	4.1.1 Random Forest
+		- number of trees
+		- minimum sample split
+		- criterion
+		- bootstrap
+
+	4.2.2 Gradient Boosting
+		- learning rate
+		- number of trees
+		- minimum sample split
+		- loss function to be optimized
+		- 
+
+
+4.2 Semi-supervised learning
+
+
+
+------------------------
++ and -'s of each model:
+------------------------
+
+logistic regressions:
++ simple to implement
++ performs well as long as the classes are linear reparable
++ robust to noise
++ regularizations to prevent overfitting
+
+
+Random forest:
++ easier to tune
++ robust to overfitting
++ generates an internal unbiased estimate of the generalization error as the forest building progresses
+
+
+tree:
+- might overfit
+
+
+gradient boosting:
++ tries to find optimal linear combination of trees (assume final model is the weighted sum of predictions of individual trees) in relation to given train data
+- Gradient Boosted Trees are more susceptible to jiggling data. This final stage makes GBT more likely to overfit 
+
+
+svm:
+- speed
+- bad for messy data
++ ketnel , flexible to choose the form of decision boudaries
++ unique solution since we are optimizing a convex function
+
+
+adaptive boosting:
++ The output of the other learning algorithms ('weak learners') is combined into a weighted sum that represents the final output of the boosted classifier
+- sensitive to noise data and outliers
+
+
+gaussian naive bayes:
++ requires less data
+- assumes class conditional independence, which in reality, dependencies usually exist
